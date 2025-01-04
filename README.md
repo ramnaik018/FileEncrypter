@@ -18,5 +18,5 @@ The **File Hider** is a Java-based application designed to securely hide files o
 - ## Setup
 
 ### 1. Clone the Repository
-[```bash
-git clone <repository-url>](https://github.com/ramnaik018/FileEncrypter)
+
+`git clone https://github.com/ramnaik018/FileEncrypter`

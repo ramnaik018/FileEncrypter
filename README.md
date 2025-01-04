@@ -1,4 +1,4 @@
-# File Hider Java Project
+# File Encrypt/Decrypt Java Project
 
 ## Overview
 

@@ -23,7 +23,7 @@ Models:
           or we need to register him newly.
 
 DAOs:
-     We mainly have to persist data of Data model and User model, so we have corresponding DAO classes
+     We mainly have to persist data of Data model and User model, so we have corresponding dao classes
      to handle persistance in database
 
 
@@ -32,8 +32,8 @@ Services:
      i)OTP service - This deals with building a new option
      ii)sendOTPService - As name suggests, its work is to send generated OTP to designated email.
      iii)User Service - checks if user already exists or not , if yes then does nothing, if not
-          this service requests User DAO to create one in Database.\
+          this service requests User dao to create one in Database.\
 
-To connect our app with MySql as a DB , we need to get POM dependency of MYSQL driver. i.e mysql to app connector
+To connect our app with MySql as a db , we need to get POM dependency of MYSQL driver. i.e mysql to app connector
 
 FINALLY , To start the app ,we call the welcome method from Main method to start Welcome view

@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c317adc1-9144-433c-a2b7-61870bf9788b" name="Changes" comment="" />
+    <list default="true" id="c317adc1-9144-433c-a2b7-61870bf9788b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/userDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/user.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/views/welcome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DB/myConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/myConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

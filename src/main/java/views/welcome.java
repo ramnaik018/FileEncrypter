@@ -42,7 +42,7 @@ public class welcome {
                 System.out.println("Enter the OTP : ");
                 String userOtp=sc.nextLine();
                 if(genOtp.equals(userOtp)){
-                    System.out.println("Hello "+email+", Welcome");
+                    new userView(email);
                 }else{
                     System.out.println("Wrong OTP");
                 }

@@ -1,0 +1,39 @@
+File Hider Java Project:
+
+     In this MVC architecture based project we basically implement hidden locker for Files.
+     That being said, we hide files from desktop and store it in a SQL database
+     after authenticating via email and OTP .
+     When ever we need to retrive those hidden files we can also unhide them from database
+     and make them reappear on desktop according to our preferences and needs.
+     Even tho this is MVC based , Here we are combining service and controller layer because of simplicity of Project
+
+
+Views/Screens:
+     We have two kind of views in our project
+          i)Welcome view - This is displayed when we first start the run and we will be asked to choose few
+          options (login ,signup ,etc)
+          ii) User view - This is dedicated to logged user, where he will be provided with few options aswell
+          like to view hidden files, unhide a file , hide a file or to exit from current loop(Here untill user selects
+          quit option we have our do while loop running to continue with what ever we want to do with fileEncrypter).
+
+Models:
+     Models are basically data holders , we primarily have two kinds of models here , Data model and User model
+     i) Data model - This model has information about file path ,email , file Name and id etc
+     ii)User model - THis model had information about user username and login creds and emails etc to check if he is already prresent in database
+          or we need to register him newly.
+
+DAOs:
+     We mainly have to persist data of Data model and User model, so we have corresponding DAO classes
+     to handle persistance in database
+
+
+Services:
+     we have few service classes as well to work with OTP and emailing
+     i)OTP service - This deals with building a new option
+     ii)sendOTPService - As name suggests, its work is to send generated OTP to designated email.
+     iii)User Service - checks if user already exists or not , if yes then does nothing, if not
+          this service requests User DAO to create one in Database.\
+
+To connect our app with MySql as a DB , we need to get POM dependency of MYSQL driver. i.e mysql to app connector
+
+FINALLY , To start the app ,we call the welcome method from Main method to start Welcome view

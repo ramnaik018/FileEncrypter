@@ -15,11 +15,15 @@ public class userDao {
 
         PreparedStatement ps=connection.prepareStatement("select * from User where Email = ?");
         ps.setString(1,email);
+
         ResultSet rs=ps.executeQuery();
-        if(rs!=null) {
+
+        if(rs.next()) { // see if there are any rows in result set or not.
             return true;
+        }else{
+            return false;
         }
-        return false;
+
     }
 
     public static int saveUser(User usr) throws SQLException, ClassNotFoundException {

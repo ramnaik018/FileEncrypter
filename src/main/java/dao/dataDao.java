@@ -27,7 +27,7 @@ public class dataDao {
 
     public static int hideFile(Data file) throws SQLException, ClassNotFoundException, IOException {
         Connection connection= myConnection.getConnection();
-        PreparedStatement ps=connection.prepareStatement("insert into Data (Email,FileName,FilePath,Bin_data) values(?,?,?,?");
+        PreparedStatement ps=connection.prepareStatement("insert into Data (Email,FileName,FilePath,Bin_data) values(?,?,?,?)");
 
         ps.setString(1,file.getEmail());
         ps.setString(2,file.getFileName());

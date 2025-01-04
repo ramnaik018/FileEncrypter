@@ -36,13 +36,13 @@ public class welcome {
         System.out.println("Please enter the email to login:");
         String email=sc.nextLine();
         try{
-            if(isFound(email)==true){
+            if(isFound(email)){
                 String genOtp= genOTPService.getOTP();
                 SendOTPService.sendOTP(email,genOtp);
                 System.out.println("Enter the OTP : ");
                 String userOtp=sc.nextLine();
                 if(genOtp.equals(userOtp)){
-                    new userView(email);
+                    (new userView(email)).home();
                 }else{
                     System.out.println("Wrong OTP");
                 }
@@ -52,6 +52,8 @@ public class welcome {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
@@ -72,9 +74,9 @@ public class welcome {
             User newUser=new User(name,email);
             int res=saveUser(newUser);
             if(res==1){
-                System.out.println("user already exists");
-            }else{
                 System.out.println("user saved");
+            }else{
+                System.out.println("user already exists");
             }
         }else{
             System.out.println("Wrong OTP");

@@ -5,16 +5,14 @@ import model.Data;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.DatabaseMetaData;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
-import static dao.dataDao.hideFile;
 import static dao.dataDao.showHiddenFiles;
 
 public class userView {
-    private String email;
+    private final String email;
 
     public userView(String email) {
         this.email = email;
@@ -30,6 +28,8 @@ public class userView {
 
             Scanner sc=new Scanner(System.in);
             int choice=sc.nextInt();
+            sc.nextLine();// consume leftover by sc.nextInt() in above line.
+
             switch(choice){
                 case 1-> {
                     List<Data> files=showHiddenFiles(this.email);
@@ -43,6 +43,7 @@ public class userView {
                     String path=sc.nextLine();
                     File f=new File(path);
                     Data file=new Data(0,this.email,f.getName(),path);
+
                     dataDao.hideFile(file);
                 }
                 case 3-> {
@@ -51,7 +52,7 @@ public class userView {
                     for(Data d:files) {
                         System.out.println(d.getId() + "  " + d.getFileName());
                     }
-                    System.out.println("enter the id of file to unhide it:");
+                    System.out.println("enter the id of file to un hide it:");
                     int id=Integer.parseInt(sc.nextLine());
                     boolean isValidId=false;
                     for(Data d:files) {

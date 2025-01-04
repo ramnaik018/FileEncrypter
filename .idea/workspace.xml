@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c317adc1-9144-433c-a2b7-61870bf9788b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/userDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/user.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/views/welcome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/SendOTPService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/genOTPService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/userService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DB/myConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/db/myConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/userDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/userDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/views/welcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/views/welcome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

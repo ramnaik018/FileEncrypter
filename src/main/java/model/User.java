@@ -1,10 +1,10 @@
 package model;
 
-public class user {
+public class User {
     private String Name;
     private String Email;
 
-    public user(String name, String email) {
+    public User(String name, String email) {
         Name = name;
         Email = email;
     }
